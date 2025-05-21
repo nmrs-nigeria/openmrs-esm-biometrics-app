@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "fhir2": ">=1.2",
+    "webservices.rest": "^2.24.0"
+  },
+  "extensions": [
+    {
+      "name": "test-dashboard",
+      "slot": "test-dashboard-slot",
+      "component": "root"
+    },
+    {
+      "name": "patient-dashboard-link",
+      "slot": "patient-chart-dashboard-slot",
+      "component": "leftBarLink",
+      "meta": {
+        "name": "test",
+        "slot": "test-dashboard-slot",
+        "title": "test"
+      }
+    },
+    {
+      "name": "Red box",
+      "component": "redBox",
+      "slot": "Boxes"
+    },
+    {
+      "name": "Blue box",
+      "component": "blueBox",
+      "slot": "Boxes"
+    },
+        {
+      "name": "Brand box",
+      "component": "blueBox",
+      "slot": "Boxes"
+    }
+  ],
+  "modals": [
+
+    {
+      "name": "loading-modal",
+      "component": "loadingModal"
+    }
+  ],
+  "pages": [
+    {
+      "component": "root",
+      "route": "patients"
+    }
+  ]
+}

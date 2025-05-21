@@ -1,0 +1,224 @@
+@use '@carbon/layout';
+@use '@carbon/type';
+
+.container {
+  padding: 2rem;
+  background: #fafbfc;
+  min-height: 100vh;
+}
+
+.welcome {
+  @include type.type-style('heading-04');
+  margin: layout.$spacing-05 0;
+}
+
+.explainer {
+  margin-bottom: layout.$spacing-07;
+}
+
+.-esm-template__root__page___G5NGl {
+  border-spacing: 0 0rem !important;
+}
+
+.page {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2rem;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+}
+
+td {
+  text-align: center;
+  vertical-align: top;
+  padding: 1rem 0.5rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  background: transparent;
+}
+
+input[type="button"] {
+  background: #f4f4f4;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+input[type="button"]:hover:not(:disabled) {
+  background: #e0e7ef;
+  border-color: #b0b8c1;
+}
+
+input[type="button"]:disabled {
+  background: #f4f4f4;
+  color: #b0b8c1;
+  cursor: not-allowed;
+}
+
+/* For the bottom button row */
+.container>div:last-child {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Remove default table border */
+table,
+tr,
+td {
+  border: none !important;
+}
+
+/* Optional: style the percentage circles if you add them */
+.percent-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  color: #b0b8c1;
+  font-size: 1rem;
+  line-height: 40px;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+.react-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  min-width: 320px;
+  text-align: center;
+}
+
+
+.containerpbs {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.containerpbs img {
+  margin-left: 10px;
+}
+
+.containerpbs .pageImage {
+  margin-left: 10px;
+}
+
+.containerpbs h1 {
+  margin-right: 20px;
+}
+
+.containerpbs button {
+  margin-right: 10px;
+}
+
+.containerpbs .message {
+  margin-left: auto;
+}
+
+.btnGlobal {
+  background: #f4f4f4 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 1.5rem !important;
+  font-size: 1rem !important;
+  margin-top: 0.5rem !important;
+  cursor: pointer !important;
+  transition: background 0.2s, border 0.2s !important;
+}
+
+
+.customHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #f8f9fa;
+  /* light gray background */
+  border-bottom: 1px solid #dee2e6;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.right-text {
+  font-weight: 600;
+  color: #0d6efd;
+  /* Bootstrap primary color */
+  white-space: nowrap;
+}
+
+.recaptureCount {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 0.4rem;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff !important;
+  background-color: #409592;
+}
+
+.fpcaptured {
+  font-size: 13px;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  background-Color: #409592;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+.noFpcaptured {
+  font-size: '13px';
+  color: '#ffffff';
+  padding: '0.5rem 1rem';
+  background-Color: '#409592';
+  border-radius: '20px';
+  max-width: '400px';
+  text-align: 'center';
+  box-shadow: '0 2px 4px rgba(0,0,0,0.1)'
+}
+
+.logoInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #f8f9fa;
+  /* light gray background */
+}
+
+.logoRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
